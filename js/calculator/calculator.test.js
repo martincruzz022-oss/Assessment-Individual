@@ -35,3 +35,7 @@ test('multiply -5 * -4 to equal 20', () => {
 test('divide by zero throws an error', () => {
   expect(() => calculator.divide(10, 0)).toThrow();
 });
+
+test('multiply by zero returns zero', () => {
+  expect(calculator.multiply(10, 0)).toBe(0);
+});
